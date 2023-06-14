@@ -13,7 +13,7 @@ protected:
     void setResult(int result) { this->result = result; }
     int getNum1() { return num1; }
     int getNum2() { return num2; }
-    virtual calculate() = 0;
+    virtual void calculate() = 0;
 
 public:
     void setNumber(int num1, int num2) { this->num1 = num1; this->num2 = num2; }
