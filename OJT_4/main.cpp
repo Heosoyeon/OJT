@@ -17,7 +17,7 @@ protected:
 
 public:
     void setNumber(int num1, int num2) { this->num1 = num1; this->num2 = num2; }
-    int getResult() { return result; }
+    int getResult() { calculate(); return result; }
 };
 
 class Add : public Operator{ 
@@ -44,7 +44,7 @@ int main()
     Multiply m;
     Divide d;
     
-    string input_exp
+    string input_exp;
     int num1, num2;
     char sign;
     
