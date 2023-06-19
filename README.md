@@ -16,10 +16,12 @@
      ![image](https://github.com/Heosoyeon/OJT/assets/99372040/26e8c3af-5f08-4dfb-a8d1-a62d456b27fc)
 
 ### OJT #4 : [C++] 사칙연산 계산기 클래스 만들기
+
    #### [정상 실행결과]
+   
    #### 1) 더하기
      - 양수 - 양수
-       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/36332a7e-03e7-41bd-a6b1-27fa09cef86c)
+       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/d9e35657-e9ff-4470-997d-648c96519252)
 
      - 양수 - 음수
        ![image](https://github.com/Heosoyeon/OJT/assets/99372040/ec96d073-6ef3-4f9e-bb07-9bd34310bc86)
