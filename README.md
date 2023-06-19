@@ -78,7 +78,10 @@
      - 음수 - 음수
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/428f36ed-f562-48c5-a994-aa85d5088c06)
 
+<br>
+
    #### [예외상황 실행결과]
+   
    - 예외상황#1 : 입력 문자열이 12 이상인 경우
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/06742dca-5e9c-46e4-8f2a-d55ee6cb601e)
 
