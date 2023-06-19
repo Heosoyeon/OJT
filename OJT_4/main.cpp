@@ -1,41 +1,58 @@
 #include <iostream>
 #include <string>
+#include <sstream>  // stringstream 라이브러리
 
 using namespace std;
 
+// 부모 클래스
 class Operator {
 private:
     int num1;
     int num2;
-    int result;
-    
+    double result;
+
 protected:
-    void setResult(int result) { this->result = result; }
+    void setResult(double result) { this->result = result; }
     int getNum1() { return num1; }
     int getNum2() { return num2; }
-    virtual void calculate() = 0;
+    virtual void calculate() = 0;  // 순수 가상함수
 
 public:
     void setNumber(int num1, int num2) { this->num1 = num1; this->num2 = num2; }
-    int getResult() { return result; }
+    double getResult() { calculate(); return result; }
 };
 
-class Add : public Operator{ 
+// 자식 클래스 : 더하기
+class Add : public Operator{
     // write
+    virtual void calculate(){
+        cout << getNum1() << " + " << getNum2() << " = " << getNum1() + getNum2() << '\n';
+    }
 };
 
-class Subtract : public Operator{ 
+// 자식 클래스 : 빼기
+class Subtract : public Operator{
     // write
+    virtual void calculate(){
+        cout << getNum1() << " - " << getNum2() << " = " << getNum1() - getNum2() << '\n';
+    }
 };
 
-class Multiply : public Operator{ 
+// 자식 클래스 : 곱하기
+class Multiply : public Operator{
     // write
+    virtual void calculate(){
+        cout << getNum1() << " * " << getNum2() << " = " << getNum1() * getNum2() << '\n';
+    }
 };
 
-class Divide : public Operator{ 
+// 자식 클래스 : 나누기
+class Divide : public Operator{
     // write
+    virtual void calculate(){
+        cout << getNum1() << " / " << getNum2() << " = " << (double)getNum1() / (double)getNum2() << '\n';
+    }
 };
-
 
 int main()
 {
@@ -43,18 +60,69 @@ int main()
     Subtract s;
     Multiply m;
     Divide d;
-    
-    string input_exp
+
+    string input_exp;
     int num1, num2;
     char sign;
-    
+
     while (1) {
         cout << "수식을 입력하세요. (break 입력 시 종료)" << endl;
-        cin >> input_exp;
-        
-        // write
-    }
+        getline(cin, input_exp);
 
+        // write
+
+        // 입력받은 문자열 길이 구하기
+        int len = input_exp.length();
+
+        // stringstream : 문자열에서 필요한 정보만 추출
+        stringstream stream(input_exp);
+        stream >> num1;
+        stream >> sign;
+        stream >> num2;
+
+        // 입력받은 문자열이 "break"가 아니거나 길이가 12 이하인 경우
+        if(input_exp != "break"){
+
+            cout << '\n';
+//            if(isspace(input_exp[i]) == 0) {
+            if(len <= 12) {
+                if(sign == '+' || sign == '-' || sign == '*' || sign == '/') {
+                    switch(sign) {
+                    case '+':
+                        a.setNumber(num1, num2);
+                        a.getResult();
+                        break;
+                    case '-':
+                        s.setNumber(num1, num2);
+                        s.getResult();
+                        break;
+                    case '*':
+                        m.setNumber(num1, num2);
+                        m.getResult();
+                        break;
+                    case '/':
+                        d.setNumber(num1, num2);
+                        d.getResult();
+                        break;
+                    }
+                }
+                else{
+                    cout << "다시 입력하세요." << '\n' << '\n';
+                }
+            }
+            else{
+                cout << "다시 입력하세요." << '\n' << '\n';
+            }
+            num1, num2 = 0;  // num1, num2 초기화
+            sign = {};  // 연산기호 초기화
+        }
+        else if(input_exp == "break"){
+            break;
+        }
+
+    }
     return 0;
 }
+
+
 
