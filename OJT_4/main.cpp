@@ -10,11 +10,7 @@ private:
     int num1;
     int num2;
     double result;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> c06c7beaaa15b8cc28890c838d6a965c4b188710
 protected:
     void setResult(double result) { this->result = result; }
     int getNum1() { return num1; }
@@ -64,11 +60,7 @@ int main()
     Subtract s;
     Multiply m;
     Divide d;
-<<<<<<< HEAD
-
-=======
     
->>>>>>> c06c7beaaa15b8cc28890c838d6a965c4b188710
     string input_exp;
     int num1, num2;
     char sign;
