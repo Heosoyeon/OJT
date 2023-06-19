@@ -28,29 +28,25 @@
    #### 1) 더하기
    
      - 양수 + 양수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/13caa01d-3d87-4994-8bb7-a4c0191cf4bf)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/b4cb4ed9-2dcb-4422-910f-54e7a6316453)
 
      - 양수 + 음수
-       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/ec96d073-6ef3-4f9e-bb07-9bd34310bc86)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/a92cda9f-de51-4241-9959-2c6b33a8d85b)
 
      - 음수 + 양수
-       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/8b4f0ef3-e5cf-4934-b783-de21f10a2bf4)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/8ea3b2d5-1af1-4b3c-994c-1eba4201b9a6)
 
      - 음수 + 음수
-       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/31efb258-c7d5-4383-9da0-cf6de2a36b9f)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/9860dff5-c273-4560-8499-ade1d35a9e7f)
 
    #### 2) 빼기
      - 양수 - 양수
-       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/55ada3fd-3dba-4b69-8d4d-0f557af4a506)
 
      - 양수 - 음수
-       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/9286b42d-5043-4d9e-b86d-6fcee4d8c9d7)
 
      - 음수 - 양수
-       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/364018ea-70e6-44e2-88b3-c093f24cf416)
 
      - 음수 - 음수
-       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/81ed2b50-f721-43fc-84b1-6ff08ca646d0)
 
    #### 3) 곱하기
      - 양수 - 양수
