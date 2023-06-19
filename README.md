@@ -53,29 +53,29 @@
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/c30432ce-dc0c-423f-a9a5-a0ee4c020b94)
 
    #### 3) 곱하기
-     - 양수 - 양수
+     - 양수 * 양수
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/c837db4f-ed5a-4038-8db7-6811c3a782a9)
 
-     - 양수 - 음수
+     - 양수 * 음수
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/62d96e39-bb85-4244-9852-1b5fc57f1d0c)
 
-     - 음수 - 양수
+     - 음수 * 양수
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/987a2471-3d9b-43bd-8977-9d505ab6af20)
      
-     - 음수 - 음수
+     - 음수 * 음수
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/0147b904-9211-4b93-b72d-3b0fa1089fe3)
      
    #### 4) 나누기
-     - 양수 - 양수
+     - 양수 / 양수
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/735f5e47-4b81-4eb0-9331-e80129df55b4)
 
-     - 양수 - 음수
+     - 양수 / 음수
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/abffa107-22ee-48f9-af22-2bbb00f78977)
 
-     - 음수 - 양수
+     - 음수 / 양수
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/376f5faf-1de0-48ac-8578-78116f0d7f6c)
 
-     - 음수 - 음수
+     - 음수 / 음수
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/428f36ed-f562-48c5-a994-aa85d5088c06)
 
 <br>
@@ -83,15 +83,19 @@
    #### [예외상황 실행결과]
    
    - 예외상황#1 : 입력 문자열이 12 이상인 경우
+
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/06742dca-5e9c-46e4-8f2a-d55ee6cb601e)
 
    - 예외상황#2 : 정수가 아닌 실수 혹은 문자를 입력하는 경우
+
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/3c179f86-afc6-493c-95eb-8ee7ff64120f)
 
    - 예외상황#3 : 정수와 문자를 함께 입력하는 경우
+
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/939c3102-e61e-43c3-b3d3-f37d40be6367)
 
    - 예외상황#4 : 사칙연산 외의 기호를 입력한 경우
+
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/1fd346eb-a1fc-47f1-b6eb-34d582681cca)
 
 
