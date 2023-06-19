@@ -78,6 +78,10 @@
      - 음수 / 음수
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/428f36ed-f562-48c5-a994-aa85d5088c06)
 
+   #### 5) "break" 입력 시, 프로그램 종료
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/328b3f72-dd2b-4f04-a1b4-c6e41345871c)
+
+
 <br>
 
    #### [예외상황 실행결과]
