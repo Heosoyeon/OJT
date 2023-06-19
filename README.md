@@ -28,7 +28,7 @@
    #### 1) 더하기
    
      - 양수 + 양수
-       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/d9e35657-e9ff-4470-997d-648c96519252)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/13caa01d-3d87-4994-8bb7-a4c0191cf4bf)
 
      - 양수 + 음수
        ![image](https://github.com/Heosoyeon/OJT/assets/99372040/ec96d073-6ef3-4f9e-bb07-9bd34310bc86)
