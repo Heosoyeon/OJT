@@ -15,5 +15,57 @@
    
      ![image](https://github.com/Heosoyeon/OJT/assets/99372040/26e8c3af-5f08-4dfb-a8d1-a62d456b27fc)
 
+### OJT #4 : [C++] 사칙연산 계산기 클래스 만들기
+   #### [정상 실행결과]
+   #### 1) 더하기
+     - 양수 - 양수
+       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/36332a7e-03e7-41bd-a6b1-27fa09cef86c)
+
+     - 양수 - 음수
+       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/ec96d073-6ef3-4f9e-bb07-9bd34310bc86)
+
+     - 음수 - 양수
+       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/8b4f0ef3-e5cf-4934-b783-de21f10a2bf4)
+
+     - 음수 - 음수
+       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/31efb258-c7d5-4383-9da0-cf6de2a36b9f)
+
+   #### 2) 빼기
+     - 양수 - 양수
+       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/55ada3fd-3dba-4b69-8d4d-0f557af4a506)
+
+     - 양수 - 음수
+       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/9286b42d-5043-4d9e-b86d-6fcee4d8c9d7)
+
+     - 음수 - 양수
+       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/364018ea-70e6-44e2-88b3-c093f24cf416)
+
+     - 음수 - 음수
+       ![image](https://github.com/Heosoyeon/OJT/assets/99372040/81ed2b50-f721-43fc-84b1-6ff08ca646d0)
+
+   #### 3) 곱하기
+     - 양수 - 양수
+     - 양수 - 음수
+     - 음수 - 양수
+     - 음수 - 음수
+
+   #### 4) 나누기
+     - 양수 - 양수
+     - 양수 - 음수
+     - 음수 - 양수
+     - 음수 - 음수
+
+   #### [예외상황 실행결과]
+   - 예외상황#1 : 입력 문자열이 12 이상인 경우
+
+
+   - 예외상황#2 : 정수가 아닌 실수 혹은 문자를 입력하는 경우
+
+
+   - 예외상황#3 : 정수와 문자를 함께 입력하는 경우
+
+
+   - 예외상황#4 : 사칙연산 외의 기호를 입력한 경우
+
 
 
