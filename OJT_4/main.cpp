@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <sstream>  // stringstream 라이브러리
+#include <iomanip>  // fixed 라이브러리
+#include <cmath>  // setprecision 라이브러리
 
 using namespace std;
 
@@ -42,15 +44,21 @@ class Subtract : public Operator{
 class Multiply : public Operator{
     // write
     virtual void calculate(){
-        cout << getNum1() << " * " << getNum2() << " = " << getNum1() * getNum2() << '\n';
+        cout << getNum1() << " * " << getNum2() << " = " << fixed << setprecision(0) << (double)getNum1() * (double)getNum2() << '\n';
     }
 };
 
 // 자식 클래스 : 나누기
 class Divide : public Operator{
     // write
+
     virtual void calculate(){
-        cout << getNum1() << " / " << getNum2() << " = " << (double)getNum1() / (double)getNum2() << '\n';
+        if(getNum1() >= getNum2()) {
+            cout << getNum1() << " / " << getNum2() << " = " << fixed << setprecision(0) << (double)getNum1() / (double)getNum2() << '\n';
+        }
+        else if(getNum1() < getNum2()) {
+            cout << getNum1() << " / " << getNum2() << " = " << fixed << setprecision(8) << (double)getNum1() / (double)getNum2() << '\n';
+        }
     }
 };
 
@@ -60,7 +68,7 @@ int main()
     Subtract s;
     Multiply m;
     Divide d;
-    
+
     string input_exp;
     int num1, num2;
     char sign;
@@ -80,29 +88,57 @@ int main()
         stream >> sign;
         stream >> num2;
 
+        int sign_index = input_exp.find(sign);  // sign의 위치를 담고 있는 변수
+
         // 입력받은 문자열이 "break"가 아니거나 길이가 12 이하인 경우
         if(input_exp != "break"){
 
             cout << '\n';
-//            if(isspace(input_exp[i]) == 0) {
+
             if(len <= 12) {
                 if(sign == '+' || sign == '-' || sign == '*' || sign == '/') {
                     switch(sign) {
                     case '+':
-                        a.setNumber(num1, num2);
-                        a.getResult();
+                        if(input_exp[0] != '+' && input_exp[len-1] != '+' && input_exp[len-1] != '-' && input_exp[len-1] != '*' && input_exp[len-1] != '/' && input_exp[sign_index+1] != '+' && input_exp[sign_index+1] != '*' &&input_exp[sign_index+1] != '/' ) {
+                            a.setNumber(num1, num2);
+                            a.getResult();
+                        }
+                        else {
+                            cout << "다시 입력하세요." << '\n' << '\n';
+                        }
                         break;
                     case '-':
-                        s.setNumber(num1, num2);
-                        s.getResult();
+                        if(input_exp[0] != '+' && input_exp[len-1] != '+' && input_exp[len-1] != '-' && input_exp[len-1] != '*' && input_exp[len-1] != '/' && input_exp[sign_index+1] != '+' && input_exp[sign_index+1] != '*' &&input_exp[sign_index+1] != '/' ) {
+                            s.setNumber(num1, num2);
+                            s.getResult();
+                        }
+                        else {
+                            cout << "다시 입력하세요." << '\n' << '\n';
+                        }
                         break;
                     case '*':
-                        m.setNumber(num1, num2);
-                        m.getResult();
+                        if(input_exp[0] != '+' && input_exp[len-1] != '+' && input_exp[len-1] != '-' && input_exp[len-1] != '*' && input_exp[len-1] != '/' && input_exp[sign_index+1] != '+' && input_exp[sign_index+1] != '*' &&input_exp[sign_index+1] != '/' ) {
+                            m.setNumber(num1, num2);
+                            m.getResult();
+                        }
+                        else {
+                            cout << "다시 입력하세요." << '\n' << '\n';
+                        }
                         break;
                     case '/':
-                        d.setNumber(num1, num2);
-                        d.getResult();
+                        if(input_exp[0] != '+' && input_exp[len-1] != '+' && input_exp[len-1] != '-' && input_exp[len-1] != '*' && input_exp[len-1] != '/' && input_exp[sign_index+1] != '+' && input_exp[sign_index+1] != '*' &&input_exp[sign_index+1] != '/' ) {
+                            // '1/0'이 입력되면 처리하는 조건문
+                            if(num1 != 1 || num2 != 0) {
+                                d.setNumber(num1, num2);
+                                d.getResult();
+                            }
+                            else if(num1 == 1 && num2 == 0) {
+                                cout << "다시 입력하세요." << '\n' << '\n';
+                            }
+                        }
+                        else {
+                            cout << "다시 입력하세요." << '\n' << '\n';
+                        }
                         break;
                     }
                 }
@@ -123,6 +159,3 @@ int main()
     }
     return 0;
 }
-
-
-
