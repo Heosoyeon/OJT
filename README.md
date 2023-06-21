@@ -117,15 +117,18 @@
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/1fd346eb-a1fc-47f1-b6eb-34d582681cca)
 
    - 예외상황#5 : 연산자를 붙여서 입력하는 경우('-' 제외)
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/8f53709a-f000-46ed-bba1-5b69edde08f5)
+
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/3d9c38e0-7082-40e4-bbe5-2203e6713a09)
 
    - 예외상황#6 : 맨 앞 혹은 맨 뒤에 연산자를 입력하는 경우('-' 제외)
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/aaa89910-da34-4269-8f82-23bc5a46ed05)
+
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/8b45cba9-e54a-4694-861c-28dce077ed45)
 
    - 예외상황#7 : 1/0을 입력하는 경우
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/af818333-3401-4e25-bbef-8ac226cbc366)
+
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/0bd3a11e-5b75-42d9-a424-6bf5ddb37469)
 
    - 예외상황#8 : 출력값의 정밀도가 떨어지는 값을 입력한 경우
                  EX) 99999*99999 혹은 1/100000000
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/cae73fd6-a3b3-444b-aff5-e1f5dbe66b4e)
 
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/1e741a09-1c30-4cca-9408-4d53fb1b74e7)
