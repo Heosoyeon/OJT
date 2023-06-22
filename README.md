@@ -132,3 +132,6 @@
                  EX) 99999*99999 혹은 1/100000000
 
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/1e741a09-1c30-4cca-9408-4d53fb1b74e7)
+
+   - 예외상황#9 : 두 수를 초과해 연산을 입력한 경우
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/af5c8850-63f0-4198-9051-9624dc14603b)
