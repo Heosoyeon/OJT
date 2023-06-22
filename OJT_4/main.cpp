@@ -90,72 +90,114 @@ int main()
 
         int sign_index = input_exp.find(sign);  // sign의 위치를 담고 있는 변수
 
+        // sign 인덱스
+        int sign_a = input_exp.find('+');
+        int sign_s = input_exp.find('-');
+        int sign_m = input_exp.find('*');
+        int sign_d = input_exp.find('/');
+
+        int sign_count = 0;
+        for (int i = 0; (i = input_exp.find(sign, i)) != string::npos; i++) {
+            sign_count++;
+        }
+
         // 입력받은 문자열이 "break"가 아니거나 길이가 12 이하인 경우
         if(input_exp != "break"){
 
             cout << '\n';
 
+            // 1. 문자열 길이가 12이하인지 판단
             if(len <= 12) {
-                if(sign == '+' || sign == '-' || sign == '*' || sign == '/') {
+                // 2. 사칙연산 기호인지 판단
+                if((sign == '+') || (sign == '-') || (sign == '*') || (sign == '/')) {
+                    // 3. 맨 앞에에 '-'를 제외한 연산자가 입력됐는지 판단
+                    if((input_exp[0] != '+') && (input_exp[len-1] != '+') && (input_exp[len-1] != '-') &&
+                            // 4. 맨 끝에 연산자가 입력됐는지 판단
+                           (input_exp[len-1] != '*') && (input_exp[len-1] != '/') && (input_exp[sign_index+1] != '+') &&
+                            // 5. 연산자가 원소로 저장된 인덱스 바로 옆에 연산자가 추가로 입력됐는지 판단('-' 제외)
+                           (input_exp[sign_index+1] != '*') && (input_exp[sign_index+1] != '/')) {}
+                    else {
+                        cout << "다시 입력하세요." << '\n' << '\n';
+                        continue;
+                    }
+
                     switch(sign) {
                     case '+':
-                        if(input_exp[0] != '+' && input_exp[len-1] != '+' && input_exp[len-1] != '-' && input_exp[len-1] != '*' && input_exp[len-1] != '/' && input_exp[sign_index+1] != '+' && input_exp[sign_index+1] != '*' &&input_exp[sign_index+1] != '/' ) {
-                            a.setNumber(num1, num2);
-                            a.getResult();
-                        }
-                        else {
-                            cout << "다시 입력하세요." << '\n' << '\n';
+                        // 6. sign 다음에 오는 인덱스부터 마지막 인덱스까지 중에
+                        for(int buff = sign_index + 1; buff < len; buff++) {
+                            // sign가 추가적으로 입력됐는지 판단
+                            if(sign_count < 2 && sign_s == -1 && sign_m == -1 && sign_d == -1) {
+                                a.setNumber(num1, num2);
+                                a.getResult();
+                                break;
+                            }
+                            else if(sign_count >= 2 || sign_s != -1 || sign_m != -1 || sign_d != -1) {
+                                cout << "다시 입력하세요." << '\n';
+                                break;
+                            }
                         }
                         break;
                     case '-':
-                        if(input_exp[0] != '+' && input_exp[len-1] != '+' && input_exp[len-1] != '-' && input_exp[len-1] != '*' && input_exp[len-1] != '/' && input_exp[sign_index+1] != '+' && input_exp[sign_index+1] != '*' &&input_exp[sign_index+1] != '/' ) {
-                            s.setNumber(num1, num2);
-                            s.getResult();
-                        }
-                        else {
-                            cout << "다시 입력하세요." << '\n' << '\n';
+                        for(int buff = sign_index + 1; buff < len; buff++) {
+                            if(sign_count < 2 && sign_a == -1 && sign_m == -1 && sign_d == -1) {
+                                a.setNumber(num1, num2);
+                                a.getResult();
+                                break;
+                            }
+                            else if(sign_count >= 2 || sign_a != -1 || sign_m != -1 || sign_d != -1) {
+                                cout << "다시 입력하세요." << '\n';
+                                break;
+                            }
                         }
                         break;
                     case '*':
-                        if(input_exp[0] != '+' && input_exp[len-1] != '+' && input_exp[len-1] != '-' && input_exp[len-1] != '*' && input_exp[len-1] != '/' && input_exp[sign_index+1] != '+' && input_exp[sign_index+1] != '*' &&input_exp[sign_index+1] != '/' ) {
-                            m.setNumber(num1, num2);
-                            m.getResult();
-                        }
-                        else {
-                            cout << "다시 입력하세요." << '\n' << '\n';
+                        for(int buff = sign_index + 1; buff < len; buff++) {
+                            if(sign_count < 2 && sign_a == -1 && sign_s == -1 && sign_d == -1) {
+                                a.setNumber(num1, num2);
+                                a.getResult();
+                                break;
+                            }
+                            else if(sign_count >= 2 || sign_a != -1 || sign_s != -1 || sign_d != -1) {
+                                cout << "다시 입력하세요." << '\n';
+                                break;
+                            }
                         }
                         break;
                     case '/':
-                        if(input_exp[0] != '+' && input_exp[len-1] != '+' && input_exp[len-1] != '-' && input_exp[len-1] != '*' && input_exp[len-1] != '/' && input_exp[sign_index+1] != '+' && input_exp[sign_index+1] != '*' &&input_exp[sign_index+1] != '/' ) {
-                            // '1/0'이 입력되면 처리하는 조건문
-                            if(num1 != 1 || num2 != 0) {
-                                d.setNumber(num1, num2);
-                                d.getResult();
-                            }
-                            else if(num1 == 1 && num2 == 0) {
-                                cout << "다시 입력하세요." << '\n' << '\n';
+                        // sign = '/'일 때, 1과 0을 입력했는지 판단
+                        if(num1 != 1 || num2 != 0) {
+                            for(int buff = sign_index + 1; buff < len; buff++) {
+                                if(sign_count < 2 && sign_a == -1 && sign_s == -1 && sign_m == -1) {
+                                    a.setNumber(num1, num2);
+                                    a.getResult();
+                                    break;
+                                }
+                                else if(sign_count >= 2 || sign_a != -1 || sign_s != -1 || sign_m != -1) {
+                                    cout << "다시 입력하세요." << '\n';
+                                    break;
+                                }
                             }
                         }
-                        else {
-                            cout << "다시 입력하세요." << '\n' << '\n';
+                        else if(num1 == 1 && num2 == 0) {
+                                    cout << "다시 입력하세요." << '\n' << '\n';
+                                    break;
                         }
                         break;
-                    }
-                }
-                else{
+                    }  // switch
+                }  // 2. if
+                else {
                     cout << "다시 입력하세요." << '\n' << '\n';
                 }
-            }
+            }  // 1. if
             else{
                 cout << "다시 입력하세요." << '\n' << '\n';
             }
             num1, num2 = 0;  // num1, num2 초기화
             sign = {};  // 연산기호 초기화
-        }
+        }  // if(input_exp != "break")
         else if(input_exp == "break"){
             break;
         }
-
     }
     return 0;
 }
