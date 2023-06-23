@@ -28,7 +28,7 @@ public:
 class Add : public Operator{
     // write
     virtual void calculate(){
-        cout << getNum1() << " + " << getNum2() << " = " << getNum1() + getNum2() << '\n';
+        cout << getNum1() << " + " << getNum2() << " = " << getNum1() + getNum2() << '\n' << '\n';
     }
 };
 
@@ -36,7 +36,7 @@ class Add : public Operator{
 class Subtract : public Operator{
     // write
     virtual void calculate(){
-        cout << getNum1() << " - " << getNum2() << " = " << getNum1() - getNum2() << '\n';
+        cout << getNum1() << " - " << getNum2() << " = " << getNum1() - getNum2() << '\n' << '\n';
     }
 };
 
@@ -44,7 +44,7 @@ class Subtract : public Operator{
 class Multiply : public Operator{
     // write
     virtual void calculate(){
-        cout << getNum1() << " * " << getNum2() << " = " << fixed << setprecision(0) << (double)getNum1() * (double)getNum2() << '\n';
+        cout << getNum1() << " * " << getNum2() << " = " << fixed << setprecision(0) << (double)getNum1() * (double)getNum2() << '\n' << '\n';
     }
 };
 
@@ -54,10 +54,10 @@ class Divide : public Operator{
 
     virtual void calculate(){
         if(getNum1() >= getNum2()) {
-            cout << getNum1() << " / " << getNum2() << " = " << fixed << setprecision(0) << (double)getNum1() / (double)getNum2() << '\n';
+            cout << getNum1() << " / " << getNum2() << " = " << fixed << setprecision(0) << (double)getNum1() / (double)getNum2() << '\n' << '\n';
         }
         else if(getNum1() < getNum2()) {
-            cout << getNum1() << " / " << getNum2() << " = " << fixed << setprecision(8) << (double)getNum1() / (double)getNum2() << '\n';
+            cout << getNum1() << " / " << getNum2() << " = " << fixed << setprecision(8) << (double)getNum1() / (double)getNum2() << '\n' << '\n';
         }
     }
 };
@@ -79,125 +79,95 @@ int main()
 
         // write
 
-        // 입력받은 문자열 길이 구하기
-        int len = input_exp.length();
-
         // stringstream : 문자열에서 필요한 정보만 추출
         stringstream stream(input_exp);
         stream >> num1;
         stream >> sign;
         stream >> num2;
 
-        int sign_index = input_exp.find(sign);  // sign의 위치를 담고 있는 변수
+        int len = input_exp.length();  // 입력받은 문자열 길이 구하기
+        int sign_index = input_exp.find(sign);  // sign 인덱스
+        int sign_subtract = input_exp.find('-',sign_index+2);  // 예외 상황 중 '-'제외에 활용할 '-' 인덱스
 
-        // sign 인덱스
-        int sign_a = input_exp.find('+');
-        int sign_s = input_exp.find('-');
-        int sign_m = input_exp.find('*');
-        int sign_d = input_exp.find('/');
-
-        int sign_count = 0;
-        for (int i = 0; (i = input_exp.find(sign, i)) != string::npos; i++) {
-            sign_count++;
+        // 1. "break" 입력 시, 프로그램 종료
+        if(input_exp == "break"){
+            break;
         }
 
-        // 입력받은 문자열이 "break"가 아니거나 길이가 12 이하인 경우
-        if(input_exp != "break"){
+        // 2. 입력한 문자열이 길이가 12 이하이면서 연산자는 +,-,*,/ 인지 판단
+        if((len > 12) || (sign != '+') && (sign != '-') && (sign != '*') && (sign != '/')){
+            cout << '\n' << "올바르게 입력했는지 확인하세요." << '\n';
+            cout << "===============================" << '\n' << '\n';
+            continue;
+        }
 
-            cout << '\n';
+        char ch[] = {'+', '*', '/'};  // 입력된 연산자와 비교하기 위한 연산자 배열 선언
+        char sign_arr;
 
-            // 1. 문자열 길이가 12이하인지 판단
-            if(len <= 12) {
-                // 2. 사칙연산 기호인지 판단
-                if((sign == '+') || (sign == '-') || (sign == '*') || (sign == '/')) {
-                    // 3. 맨 앞에에 '-'를 제외한 연산자가 입력됐는지 판단
-                    if((input_exp[0] != '+') && (input_exp[len-1] != '+') && (input_exp[len-1] != '-') &&
-                            // 4. 맨 끝에 연산자가 입력됐는지 판단
-                           (input_exp[len-1] != '*') && (input_exp[len-1] != '/') && (input_exp[sign_index+1] != '+') &&
-                            // 5. 연산자가 원소로 저장된 인덱스 바로 옆에 연산자가 추가로 입력됐는지 판단('-' 제외)
-                           (input_exp[sign_index+1] != '*') && (input_exp[sign_index+1] != '/')) {}
-                    else {
-                        cout << "다시 입력하세요." << '\n' << '\n';
-                        continue;
-                    }
+        // '-'를 제외한 기호들을 for문을 활용해 하나씩 추출해 3, 4번에 적용
+        for(int i = 0; i < 3; i++) {
 
-                    switch(sign) {
-                    case '+':
-                        // 6. sign 다음에 오는 인덱스부터 마지막 인덱스까지 중에
-                        for(int buff = sign_index + 1; buff < len; buff++) {
-                            // sign가 추가적으로 입력됐는지 판단
-                            if(sign_count < 2 && sign_s == -1 && sign_m == -1 && sign_d == -1) {
-                                a.setNumber(num1, num2);
-                                a.getResult();
-                                break;
-                            }
-                            else if(sign_count >= 2 || sign_s != -1 || sign_m != -1 || sign_d != -1) {
-                                cout << "다시 입력하세요." << '\n';
-                                break;
-                            }
-                        }
-                        break;
-                    case '-':
-                        for(int buff = sign_index + 1; buff < len; buff++) {
-                            if(sign_count < 2 && sign_a == -1 && sign_m == -1 && sign_d == -1) {
-                                a.setNumber(num1, num2);
-                                a.getResult();
-                                break;
-                            }
-                            else if(sign_count >= 2 || sign_a != -1 || sign_m != -1 || sign_d != -1) {
-                                cout << "다시 입력하세요." << '\n';
-                                break;
-                            }
-                        }
-                        break;
-                    case '*':
-                        for(int buff = sign_index + 1; buff < len; buff++) {
-                            if(sign_count < 2 && sign_a == -1 && sign_s == -1 && sign_d == -1) {
-                                a.setNumber(num1, num2);
-                                a.getResult();
-                                break;
-                            }
-                            else if(sign_count >= 2 || sign_a != -1 || sign_s != -1 || sign_d != -1) {
-                                cout << "다시 입력하세요." << '\n';
-                                break;
-                            }
-                        }
-                        break;
-                    case '/':
-                        // sign = '/'일 때, 1과 0을 입력했는지 판단
-                        if(num1 != 1 || num2 != 0) {
-                            for(int buff = sign_index + 1; buff < len; buff++) {
-                                if(sign_count < 2 && sign_a == -1 && sign_s == -1 && sign_m == -1) {
-                                    a.setNumber(num1, num2);
-                                    a.getResult();
-                                    break;
-                                }
-                                else if(sign_count >= 2 || sign_a != -1 || sign_s != -1 || sign_m != -1) {
-                                    cout << "다시 입력하세요." << '\n';
-                                    break;
-                                }
-                            }
-                        }
-                        else if(num1 == 1 && num2 == 0) {
-                                    cout << "다시 입력하세요." << '\n' << '\n';
-                                    break;
-                        }
-                        break;
-                    }  // switch
-                }  // 2. if
-                else {
-                    cout << "다시 입력하세요." << '\n' << '\n';
+            sign_arr = ch[i];
+
+            int sign_temp = input_exp.find(sign_arr,sign_index+1);  // num2 이후에 또 sign이 입력되면, 그 sign의 인덱스를 저장
+            int first = input_exp.find_first_of(sign_arr,0);  // 입력된 연산자 중 가장 앞 쪽에 놓인 sign의 인덱스
+            int last = input_exp.find_last_of(sign_arr,len-1);  // 입력된 연산자 중 가장 뒤 쪽에 놓인 sign의 인덱스
+
+            // 3. 앞에서부터 찾은 연산자 인덱스,뒤에서부터 찾은 연산자 인덱스 비교
+            if(first == last){
+
+                // 4. '-'를 맨 앞 혹은 num2 앞에 입력했는지 판단
+                if(input_exp.find('-') == 0 || input_exp.find('-') == sign_index+1) {
+                    break;
                 }
-            }  // 1. if
+            }
             else{
-                cout << "다시 입력하세요." << '\n' << '\n';
+                cout << '\n' << "계산식을 올바르게 입력했는지 확인하세요." << '\n';
+                cout << "========================================" << '\n' << '\n';
+                sign = {};  // sign 초기화
+                break;
+
+            }
+
+            // 5. 입력 정수가 3개 이상인지 판단
+            if(sign_temp != string::npos || sign_subtract != string::npos) {
+                cout << '\n' << "서로 다른 연산자를 2개 이상 입력했는지 확인하세요.('-'제외)" << '\n';
+                cout << "===========================================================" << '\n' << '\n';
+                sign = {};  // sign 초기화
+                break;
+            }
+        }
+
+            switch(sign) {
+            case '+':
+                cout << '\n' << "[출력]" << '\n';
+                a.setNumber(num1, num2);
+                a.getResult();
+                break;
+            case '-':
+                cout << '\n' << "[출력]" << '\n';
+                s.setNumber(num1, num2);
+                s.getResult();
+                break;
+            case '*':
+                cout << '\n' << "[출력]" << '\n';
+                m.setNumber(num1, num2);
+                m.getResult();
+                break;
+            case '/':
+                if(num1 != 1 || num2 != 0) {
+                    cout << '\n' << "[출력]" << '\n';
+                    d.setNumber(num1, num2);
+                    d.getResult();
+                }
+                else {
+                    cout << '\n' << "'1/0' 은 출력 불가" << '\n';
+                cout << "==================" << '\n' << '\n';
+                }
+                break;
             }
             num1, num2 = 0;  // num1, num2 초기화
             sign = {};  // 연산기호 초기화
-        }  // if(input_exp != "break")
-        else if(input_exp == "break"){
-            break;
-        }
     }
     return 0;
 }
