@@ -62,37 +62,37 @@
    
    - 예외상황#1 : 입력 문자열이 12 이상인 경우
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/06742dca-5e9c-46e4-8f2a-d55ee6cb601e)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/08bcef3f-5011-4e03-9d3b-7bbaa718b8dd)
 
    - 예외상황#2 : 정수가 아닌 실수 혹은 문자를 입력하는 경우
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/3c179f86-afc6-493c-95eb-8ee7ff64120f)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/aed2235d-b538-4ea0-95ed-236ec8a64c22)
 
    - 예외상황#3 : 정수와 문자를 함께 입력하는 경우
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/939c3102-e61e-43c3-b3d3-f37d40be6367)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/d647c4f1-9461-4802-8f14-66e0e4297182)
 
    - 예외상황#4 : 사칙연산 외의 기호를 입력한 경우
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/1fd346eb-a1fc-47f1-b6eb-34d582681cca)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/4af34951-e2e5-43b0-af5d-52ebe09ec831)
 
    - 예외상황#5 : 연산자를 붙여서 입력하는 경우('-' 제외)
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/3d9c38e0-7082-40e4-bbe5-2203e6713a09)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/663f4d65-8619-4ca9-8f2e-9a5107b27e0d)
 
    - 예외상황#6 : 맨 앞 혹은 맨 뒤에 연산자를 입력하는 경우('-' 제외)
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/8b45cba9-e54a-4694-861c-28dce077ed45)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/28fbd4b8-75d2-421c-b7f6-ac3f01816be0)
 
-   - 예외상황#7 : 1/0을 입력하는 경우
+   - 예외상황#7 : 분자 혹은 분모에 '0'을 입력하는 경우
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/0bd3a11e-5b75-42d9-a424-6bf5ddb37469)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/bc7bcf2f-6373-41ca-a71d-be3140588d28)
 
-   - 예외상황#8 : 출력값의 정밀도가 떨어지는 값을 입력한 경우
+   - 예외상황#8 : 상대적으로 큰 값을 입력한 경우
                  EX) 99999*99999 혹은 1/100000000
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/1e741a09-1c30-4cca-9408-4d53fb1b74e7)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/0cf7533c-457a-4019-be4c-829572b51daa)
 
    - 예외상황#9 : 두 수를 초과해 연산을 입력한 경우
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/af5c8850-63f0-4198-9051-9624dc14603b)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/95ae5b04-a636-4428-979f-4ffbb2bc684a)
