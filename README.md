@@ -39,19 +39,19 @@
    
    #### 1) 더하기
    
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/fd94a3bc-23aa-42f0-98b8-240df6432299)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/f014f17b-7161-4f90-bb9c-d3d20ffdc0aa)
 
    #### 2) 빼기
    
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/23357c11-9814-41ea-8c4b-1d70b184cc0f)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/f9c1ee04-5f8a-4b82-bfd5-3921fe7608a7)
 
    #### 3) 곱하기
    
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/bdfc75cd-f2b9-4043-8a82-93388224eb48)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/1bc3f7a0-7476-4839-8c0f-1a821c6dbeaf)
 
    #### 4) 나누기
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/9e1905db-bb4d-4941-949f-2191dc57124f)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/0adcf832-b01e-4d99-baad-a3e2a432f2f4)
 
    #### 5) "break" 입력 시, 프로그램 종료
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/328b3f72-dd2b-4f04-a1b4-c6e41345871c)
