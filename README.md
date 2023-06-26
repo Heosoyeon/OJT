@@ -39,60 +39,22 @@
    
    #### 1) 더하기
    
-     - 양수 + 양수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/b4cb4ed9-2dcb-4422-910f-54e7a6316453)
-
-     - 양수 + 음수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/a92cda9f-de51-4241-9959-2c6b33a8d85b)
-
-     - 음수 + 양수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/8ea3b2d5-1af1-4b3c-994c-1eba4201b9a6)
-
-     - 음수 + 음수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/9860dff5-c273-4560-8499-ade1d35a9e7f)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/fd94a3bc-23aa-42f0-98b8-240df6432299)
 
    #### 2) 빼기
-     - 양수 - 양수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/986459a4-79db-4cb9-8172-f76a2073157d)
-
-     - 양수 - 음수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/6f8be984-a55b-470d-b006-5806df11e33e)
-
-     - 음수 - 양수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/864801a5-678b-413f-8d3e-34cdc5776c8f)
-
-     - 음수 - 음수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/c30432ce-dc0c-423f-a9a5-a0ee4c020b94)
+   
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/23357c11-9814-41ea-8c4b-1d70b184cc0f)
 
    #### 3) 곱하기
-     - 양수 * 양수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/c837db4f-ed5a-4038-8db7-6811c3a782a9)
+   
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/bdfc75cd-f2b9-4043-8a82-93388224eb48)
 
-     - 양수 * 음수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/62d96e39-bb85-4244-9852-1b5fc57f1d0c)
-
-     - 음수 * 양수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/987a2471-3d9b-43bd-8977-9d505ab6af20)
-     
-     - 음수 * 음수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/0147b904-9211-4b93-b72d-3b0fa1089fe3)
-     
    #### 4) 나누기
-     - 양수 / 양수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/735f5e47-4b81-4eb0-9331-e80129df55b4)
 
-     - 양수 / 음수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/abffa107-22ee-48f9-af22-2bbb00f78977)
-
-     - 음수 / 양수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/376f5faf-1de0-48ac-8578-78116f0d7f6c)
-
-     - 음수 / 음수
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/428f36ed-f562-48c5-a994-aa85d5088c06)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/9e1905db-bb4d-4941-949f-2191dc57124f)
 
    #### 5) "break" 입력 시, 프로그램 종료
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/328b3f72-dd2b-4f04-a1b4-c6e41345871c)
-
 
 <br>
 
