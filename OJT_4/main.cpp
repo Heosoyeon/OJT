@@ -53,12 +53,7 @@ class Divide : public Operator{
     // write
 
     virtual void calculate(){
-        if(getNum1() >= getNum2()) {
-            cout << getNum1() << " / " << getNum2() << " = " << fixed << setprecision(0) << (double)getNum1() / (double)getNum2() << '\n' << '\n';
-        }
-        else if(getNum1() < getNum2()) {
-            cout << getNum1() << " / " << getNum2() << " = " << fixed << setprecision(8) << (double)getNum1() / (double)getNum2() << '\n' << '\n';
-        }
+        cout << getNum1() << " / " << getNum2() << " = " << fixed << setprecision(8) << (double)getNum1() / (double)getNum2() << '\n' << '\n';
     }
 };
 
@@ -155,14 +150,14 @@ int main()
                 m.getResult();
                 break;
             case '/':
-                if(num1 != 1 || num2 != 0) {
+                if(num1 != 0 && num2 != 0) {
                     cout << '\n' << "[출력]" << '\n';
                     d.setNumber(num1, num2);
                     d.getResult();
                 }
                 else {
-                    cout << '\n' << "'1/0' 은 출력 불가" << '\n';
-                cout << "==================" << '\n' << '\n';
+                    cout << '\n' << "분자 혹은 분모에 '0'을 입력했는지 확인하세요." << '\n';
+                cout << "=============================================" << '\n' << '\n';
                 }
                 break;
             }
