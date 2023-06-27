@@ -161,7 +161,8 @@ int main()
                 }
                 break;
             default :
-                cout << "제대로 입력됐는지 확인하세요." << '\n';
+                cout << "다시 시도하세요." << '\n' << '\n';
+                break;
         }
         num1, num2 = 0;  // num1, num2 초기화
         sign = {};  // 연산기호 초기화
