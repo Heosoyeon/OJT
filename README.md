@@ -92,3 +92,10 @@
    - 예외상황#9 : 두 수를 초과해 연산을 입력한 경우
 
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/95ae5b04-a636-4428-979f-4ffbb2bc684a)
+
+<br>
+
+### OJT #5 : [Qt] Qt 개발환경 구축 및 프로그래밍
+-- -- -- -- --
+
+👉 [업로드한 주소]
