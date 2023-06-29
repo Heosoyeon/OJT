@@ -92,3 +92,17 @@
    - 예외상황#9 : 두 수를 초과해 연산을 입력한 경우
 
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/95ae5b04-a636-4428-979f-4ffbb2bc684a)
+
+<br>
+
+### OJT #5 : [Qt] 개발환경 구축 및 프로그래밍
+-- -- -- -- --
+
+👉 [업로드한 주소]
+
+#### - 결과 이미지
+[Console에서의 "Hello World" 출력]
+
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/cba97189-b116-45ad-942d-fb84e4faae8c)
+
+[GUI 기반 "Hello World" 출력]
