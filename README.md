@@ -99,3 +99,10 @@
 -- -- -- -- --
 
 👉 [업로드한 주소]
+
+#### - 결과 이미지
+[Console에서의 "Hello World" 출력]
+
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/cba97189-b116-45ad-942d-fb84e4faae8c)
+
+[GUI 기반 "Hello World" 출력]
