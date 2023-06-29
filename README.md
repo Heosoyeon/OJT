@@ -106,3 +106,9 @@
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/cba97189-b116-45ad-942d-fb84e4faae8c)
 
 [GUI 기반 "Hello World" 출력]
+
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/670b7afa-7937-40b1-a8e5-e73239baef1d)
+
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/d75b5867-1ac5-4876-a1d2-ec7e8fc9d4e0)
+
+
