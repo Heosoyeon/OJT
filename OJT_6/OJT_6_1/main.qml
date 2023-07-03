@@ -15,10 +15,13 @@ Window {
         spacing: 5
         anchors.fill: parent
 
-        TextField {
-            id: textField
-            text: qsTr("")
+
+        TextEdit {
+            id: textEdit
             Layout.fillWidth: true
+            height: 120
+            visible: true
+            font.pixelSize: 30
         }
 
         GridLayout {
@@ -140,5 +143,6 @@ Window {
                 Layout.fillWidth: true
             }
         }
+
     }
 }
