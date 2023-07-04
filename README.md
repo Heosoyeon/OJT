@@ -117,7 +117,7 @@
 #### - 6-1 : qml을 사용하여 계산기 GUI 구현
 [결과 이미지]
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/5e4b3ad1-b4a2-4d28-b489-fec9e14b73f4)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/161a606c-977d-4987-ad60-5d323b74648c)
 
 #### - 6-2 : C++ 과 qml 코드로 계산기 기능 구현
 
