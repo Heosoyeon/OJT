@@ -137,6 +137,6 @@
 
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/d28985ff-c26b-48e9-a72b-b07d131afbe4)
 
-2) 결과 : "0" 출력
+2) 결과 : 모든 예외상황 "0" 출력 
    
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/77b5a387-22e6-4a3f-9eaa-b9c31f366332)
