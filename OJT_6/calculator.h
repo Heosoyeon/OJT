@@ -31,8 +31,8 @@ protected:
 public:
     void setNumber(int num1, int num2) { this->num1 = num1; this->num2 = num2; }
     double getResult() { return result; }
-    //Q_INVOKABLE double getResult() { calculate(); return result; }
 
+    // qml 에서 text 가져오기 위한 함수
     void setInput_string(QVariant input_string) { this->input_string = input_string; emit input_stringChanged(); }
     QVariant getInput_string() { return input_string; }
 
