@@ -121,3 +121,21 @@
 
 #### - 6-2 : C++ 과 qml 코드로 계산기 기능 구현
 
+#### [정상] 
+
+Button 클릭으로 "1+1" 입력
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/d5f518d2-151d-4abc-b11c-95d1c7ffa661)
+
+연산 결과
+
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/382cddac-13f7-4692-b964-3d9c92334497)
+
+#### [예외상황]
+
+"1+1-1" 입력
+
+
+
+결과
+
+
