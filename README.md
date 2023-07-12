@@ -123,19 +123,20 @@
 
 #### [정상] 
 
-Button 클릭으로 "1+1" 입력
+1) Button 클릭으로 "1+1" 입력
+
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/d5f518d2-151d-4abc-b11c-95d1c7ffa661)
 
-연산 결과
+2) 결과
 
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/382cddac-13f7-4692-b964-3d9c92334497)
 
 #### [예외상황]
 
-"1+1-1" 입력
+1) "1+1-1" 입력
 
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/d28985ff-c26b-48e9-a72b-b07d131afbe4)
 
-
-결과
-
-
+2) 결과 : "0" 출력
+   
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/77b5a387-22e6-4a3f-9eaa-b9c31f366332)
