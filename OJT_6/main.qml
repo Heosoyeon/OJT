@@ -17,11 +17,13 @@ Window {
         Text {
             id: calculator_text
             height: 120
+            font.capitalization: Font.SmallCaps
             Layout.fillWidth: true
             Layout.fillHeight: true
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignRight
             font.pixelSize: 20
+            rightPadding: 20
         }
         GridLayout {
             id: gridLayout

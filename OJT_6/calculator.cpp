@@ -77,8 +77,13 @@ int Calculator::calculate() {
         return multiply();
         break;
     case '/':
-        setNumber(num1, num2);
-        return divide();
+        if(num1 != 0 && num2 != 0) {
+            setNumber(num1, num2);
+            return divide();
+        }
+        else {
+            return 0;
+        }
         break;
     default:
         break;

@@ -36,10 +36,10 @@ public:
     void setInput_string(QVariant input_string) { this->input_string = input_string; emit input_stringChanged(); }
     QVariant getInput_string() { return input_string; }
 
-    Q_INVOKABLE int add();
-    Q_INVOKABLE int subtract();
-    Q_INVOKABLE int multiply();
-    Q_INVOKABLE int divide();
+    int add();
+    int subtract();
+    int multiply();
+    int divide();
     Q_INVOKABLE int calculate();
 
 signals:
