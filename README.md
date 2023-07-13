@@ -117,7 +117,7 @@
 #### - 6-1 : qml을 사용하여 계산기 GUI 구현
 [결과 이미지]
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/161a606c-977d-4987-ad60-5d323b74648c)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/53dae15b-6d15-426e-b826-3f2c426c27c2)
 
 #### - 6-2 : C++ 과 qml 코드로 계산기 기능 구현
 
@@ -125,18 +125,18 @@
 
 1) Button 클릭으로 "1+1" 입력
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/d5f518d2-151d-4abc-b11c-95d1c7ffa661)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/f1aee006-9087-4f63-94a5-3a987a543180)
 
 2) 결과
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/382cddac-13f7-4692-b964-3d9c92334497)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/e3f67057-0f26-43f8-af8a-be79ef746672)
 
 #### [예외상황]
 
 1) "1+1-1" 입력
 
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/d28985ff-c26b-48e9-a72b-b07d131afbe4)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/beafe737-6bc1-43b4-93b3-6fc14c90ffde)
 
 2) 결과 : 모든 예외상황 "0" 출력 
    
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/77b5a387-22e6-4a3f-9eaa-b9c31f366332)
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/9ab65ec5-c9b3-4b15-b72f-89d3acbfe6ef)
