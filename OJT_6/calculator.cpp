@@ -67,15 +67,12 @@ int Calculator::calculate() {
     case '+':
         setNumber(num1, num2);
         return add();
-        break;
     case '-':
         setNumber(num1, num2);
         return subtract();
-        break;
     case 'X':
         setNumber(num1, num2);
         return multiply();
-        break;
     case '/':
         if(num1 != 0 && num2 != 0) {
             setNumber(num1, num2);
@@ -84,11 +81,10 @@ int Calculator::calculate() {
         else {
             return 0;
         }
-        break;
     default:
         break;
     }
-    cout << '\n';
+    return 0;
 }
 
 int Calculator::add() {
