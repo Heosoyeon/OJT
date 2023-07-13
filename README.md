@@ -131,6 +131,8 @@
 
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/e3f67057-0f26-43f8-af8a-be79ef746672)
 
+<br>
+
 #### [예외상황]
 
 1) "1+1-1" 입력
