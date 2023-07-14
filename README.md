@@ -142,3 +142,19 @@
 2) 결과 : 모든 예외상황 "0" 출력 
    
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/9ab65ec5-c9b3-4b15-b72f-89d3acbfe6ef)
+
+
+#### [추가 예외상황]
+
+1) num1 혹은 num2 미입력하는 경우
+   
+2) 결과 : 아무것도 출력 X
+
+
+#### - 6-3 버튼 클릭 시, 버튼 색상 변경 
+
+![](https://velog.velcdn.com/images/thdusdl4767/post/a9f7ddab-0566-41fe-9ed4-8e357dedba6f/image.png)
+
+#### - 6-4 Layout없이 버튼 정렬
+
+![](https://velog.velcdn.com/images/thdusdl4767/post/09fdd155-4508-4be7-a499-ccff196f1dd7/image.png)
