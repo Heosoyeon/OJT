@@ -155,9 +155,9 @@
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/4489af56-759d-4ee9-a0ff-cc755525962f)
 
 3) 예외처리 이후의 결과 이미지
-   👉 아무것도 출력되지 않도록 함
-   
-![image](https://github.com/Heosoyeon/OJT/assets/99372040/46e5a416-a5ef-4a0a-96ca-cb82ccda4e7a)
+   👉 "0" 이 출력되도록 함
+
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/7a54cf36-b285-445e-8433-10df21737ce0)
 
 #### - 6-3 버튼 클릭 시, 버튼 색상 변경 
 
