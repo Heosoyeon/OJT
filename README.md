@@ -142,3 +142,27 @@
 2) 결과 : 모든 예외상황 "0" 출력 
    
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/9ab65ec5-c9b3-4b15-b72f-89d3acbfe6ef)
+
+
+#### [추가 예외상황]
+
+1) num1 혹은 num2 미입력하는 경우
+   
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/d0a9098d-cab7-43f8-a943-bd55f7f6e4a2)
+
+2) 예외처리 이전의 결과 이미지
+
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/4489af56-759d-4ee9-a0ff-cc755525962f)
+
+3) 예외처리 이후의 결과 이미지
+   👉 아무것도 출력되지 않도록 함
+   
+![image](https://github.com/Heosoyeon/OJT/assets/99372040/46e5a416-a5ef-4a0a-96ca-cb82ccda4e7a)
+
+#### - 6-3 버튼 클릭 시, 버튼 색상 변경 
+
+![](https://velog.velcdn.com/images/thdusdl4767/post/a9f7ddab-0566-41fe-9ed4-8e357dedba6f/image.png)
+
+#### - 6-4 Layout없이 버튼 정렬
+
+![](https://velog.velcdn.com/images/thdusdl4767/post/09fdd155-4508-4be7-a499-ccff196f1dd7/image.png)
