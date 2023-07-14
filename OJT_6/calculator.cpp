@@ -19,7 +19,6 @@ int Calculator::calculate() {
 
     int num1, num2;
     char sign;
-    string str = "fail";
 
     // 2번을 예외상황을 처리하기 위해 num1, num2 초기화
     num1 = 0; num2 = 0;
@@ -40,7 +39,6 @@ int Calculator::calculate() {
 
     // 2. num1 혹은 num2 가 비었는지 판단
     if(num1 == 0 || num2 == 0) {
-        // 예외상황 발생 시, qml에 result 값 0 전달
         return 0;
     }
 

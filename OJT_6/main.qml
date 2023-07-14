@@ -321,13 +321,6 @@ Window {
             Calculator.input_string = calculator_text.text
             Calculator.result = Calculator.calculate()
             calculator_text.text = Calculator.result
-            // 2번 예외상황 후 넘어온 result 값 활용
-            if(Calculator.result == 0) {
-                calculator_text.text = ""
-            }
-            else {
-                calculator_text.text = Calculator.result
-            }
             background.color="#C8E6C8"
         }
     }
