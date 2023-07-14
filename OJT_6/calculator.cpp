@@ -19,6 +19,10 @@ int Calculator::calculate() {
 
     int num1, num2;
     char sign;
+    string str = "fail";
+
+    // 2번을 예외상황을 처리하기 위해 num1, num2 초기화
+    num1 = 0; num2 = 0;
 
     stringstream stream(input_exp);
     stream >> num1;
@@ -34,6 +38,12 @@ int Calculator::calculate() {
         return 0;
      }
 
+    // 2. num1 혹은 num2 가 비었는지 판단
+    if(num1 == 0 || num2 == 0) {
+        // 예외상황 발생 시, qml에 result 값 0 전달
+        return 0;
+    }
+
      char ch[] = {'+', 'X', '/'};  // 입력된 연산자와 비교하기 위한 연산자 배열 선언
      char sign_arr;
 
@@ -46,9 +56,9 @@ int Calculator::calculate() {
         int first = input_exp.find_first_of(sign_arr,0);  // 입력된 연산자 중 가장 앞 쪽에 놓인 sign의 인덱스
         int last = input_exp.find_last_of(sign_arr,len-1);  // 입력된 연산자 중 가장 뒤 쪽에 놓인 sign의 인덱스
 
-        // 2. 앞에서부터 찾은 연산자 인덱스,뒤에서부터 찾은 연산자 인덱스 비교
+        // 앞에서부터 찾은 연산자 인덱스,뒤에서부터 찾은 연산자 인덱스 비교
         if(first == last){
-            // 4. '-'를 맨 앞 혹은 num2 앞에 입력했는지 판단
+            // 3. '-'를 맨 앞 혹은 num2 앞에 입력했는지 판단
             if(input_exp.find('-') == 0 || input_exp.find('-') == sign_index+1) {
                 return 0;
             }
@@ -57,7 +67,7 @@ int Calculator::calculate() {
             return 0;
         }
 
-        // 3. 입력 정수가 3개 이상인지 판단
+        // 4. 입력 정수가 3개 이상인지 판단
         if(sign_temp != string::npos || sign_subtract != string::npos) {
             return 0;
         }
