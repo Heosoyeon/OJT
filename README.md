@@ -16,7 +16,7 @@
 ### OJT #3 : [Linux] Ubuntu 환경 구축 및 gcc/g++ 컴파일
 -- -- -- -- --
 
-🔗 [업로드 주소](https://velog.io/@thdusdl4767/Linux-%EC%9A%B0%EB%B6%84%ED%88%ACUbuntu-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0), [업로드한 주소](https://velog.io/@thdusdl4767/Linux-Vim-Editor-gcc-c-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0)
+🔗 [업로드 주소](https://velog.io/@thdusdl4767/Linux-%EC%9A%B0%EB%B6%84%ED%88%ACUbuntu-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0), [업로드 주소](https://velog.io/@thdusdl4767/Linux-Vim-Editor-gcc-c-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0)
    #### [실행결과]
    - gcc 컴파일
    
