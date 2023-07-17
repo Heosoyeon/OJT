@@ -146,23 +146,26 @@
 
 #### [추가 예외상황]
 
-1) num1 혹은 num2 미입력하는 경우
+✅ num1 혹은 num2 미입력하는 경우
    
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/d0a9098d-cab7-43f8-a943-bd55f7f6e4a2)
 
-2) 예외처리 이전의 결과 이미지
+[예외처리 이전의 결과 이미지]
 
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/4489af56-759d-4ee9-a0ff-cc755525962f)
 
-3) 예외처리 이후의 결과 이미지
+[예외처리 이후의 결과 이미지]
    👉 "0" 이 출력되도록 함
 
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/7a54cf36-b285-445e-8433-10df21737ce0)
 
-#### - 6-3 버튼 클릭 시, 버튼 색상 변경 
-
-![](https://velog.velcdn.com/images/thdusdl4767/post/a9f7ddab-0566-41fe-9ed4-8e357dedba6f/image.png)
-
-#### - 6-4 Layout없이 버튼 정렬
+#### ✅ Layout없이 버튼 정렬
 
 ![](https://velog.velcdn.com/images/thdusdl4767/post/09fdd155-4508-4be7-a499-ccff196f1dd7/image.png)
+
+#### ✅ 버튼 압력 시에만 색상 변경. 버튼을 때면, 원래 색상으로 돌아오게 하기
+#### ✅ "clear" 버튼 클릭 시, "clear"와 "=" 버튼 비활성화
+
+[결과 동영상]
+
+[Screencast from 2023년 07월 17일 16시 00분 39초.webm](https://github.com/Heosoyeon/OJT/assets/99372040/e69baae2-d9ad-4677-85fe-9a96e668a904)
