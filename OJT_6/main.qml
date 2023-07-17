@@ -48,7 +48,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_7
-            onClicked: calculator_text.text += "7"
+            onClicked: {
+                calculator_text.text += "7"
+                button_equal.enabled = true
+            }
             anchors.fill: button_7; hoverEnabled: true
         }
     }
@@ -72,7 +75,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_8
-            onClicked: calculator_text.text += "8"
+            onClicked: {
+                calculator_text.text += "8"
+                button_equal.enabled = true
+            }
             anchors.fill: button_8; hoverEnabled: true
         }
     }
@@ -96,7 +102,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_9
-            onClicked: calculator_text.text += "9"
+            onClicked: {
+                calculator_text.text += "9"
+                button_equal.enabled = true
+            }
             anchors.fill: button_9; hoverEnabled: true
         }
     }
@@ -119,7 +128,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_add
-            onClicked: calculator_text.text += "+"
+            onClicked: {
+                calculator_text.text += "+"
+                button_equal.enabled = true
+            }
             anchors.fill: button_add; hoverEnabled: true
         }
     }
@@ -145,7 +157,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_4
-            onClicked: calculator_text.text += "4"
+            onClicked: {
+                calculator_text.text += "4"
+                button_equal.enabled = true
+            }
             anchors.fill: button_4; hoverEnabled: true
         }
     }
@@ -170,7 +185,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_5
-            onClicked: calculator_text.text += "5"
+            onClicked: {
+                calculator_text.text += "5"
+                button_equal.enabled = true
+            }
             anchors.fill: button_5; hoverEnabled: true
         }
     }
@@ -195,7 +213,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_6
-            onClicked: calculator_text.text += "5"
+            onClicked: {
+                calculator_text.text += "6"
+                button_equal.enabled = true
+            }
             anchors.fill: button_6; hoverEnabled: true
         }
     }
@@ -219,7 +240,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_subtract
-            onClicked: calculator_text.text += "-"
+            onClicked: {
+                calculator_text.text += "-"
+                button_equal.enabled = true
+            }
             anchors.fill: button_subtract; hoverEnabled: true
         }
     }
@@ -245,7 +269,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_1
-            onClicked: calculator_text.text += "1"
+            onClicked: {
+                calculator_text.text += "1"
+                button_equal.enabled = true
+            }
             anchors.fill: button_1; hoverEnabled: true
         }
     }
@@ -270,7 +297,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_2
-            onClicked: calculator_text.text += "2"
+            onClicked: {
+                calculator_text.text += "2"
+                button_equal.enabled = true
+            }
             anchors.fill: button_2; hoverEnabled: true
         }
     }
@@ -295,7 +325,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_3
-            onClicked: calculator_text.text += "3"
+            onClicked: {
+                calculator_text.text += "3"
+                button_equal.enabled = true
+            }
             anchors.fill: button_3; hoverEnabled: true
         }
     }
@@ -319,7 +352,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_multiply
-            onClicked: calculator_text.text += "X"
+            onClicked: {
+                calculator_text.text += "X"
+                button_equal.enabled = true
+            }
             anchors.fill: button_multiply; hoverEnabled: true
         }
     }
@@ -376,7 +412,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_0
-            onClicked: calculator_text.text += "0"
+            onClicked: {
+                calculator_text.text += "0"
+                button_equal.enabled = true
+            }
             anchors.fill: button_0; hoverEnabled: true
         }
     }
@@ -430,7 +469,10 @@ Window {
         }
         MouseArea {
             id: mouseArea_divide
-            onClicked: calculator_text.text += "/"
+            onClicked: {
+                calculator_text.text += "/"
+                button_equal.enabled = true
+            }
             anchors.fill: button_divide; hoverEnabled: true
         }
     }
