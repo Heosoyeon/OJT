@@ -10,6 +10,8 @@ Window {
     height: 480
     title: qsTr("Calculator")
 
+    property bool mbuttonClicked: true
+
     Text {
         id: calculator_text
         height: 120
@@ -40,9 +42,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "7"
-            background.color="#E53731"
+        Rectangle {
+            anchors.fill: button_7
+            color: mouseArea_7.pressedButtons ? "#E53731" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_7
+            onClicked: calculator_text.text += "7"
+            anchors.fill: button_7; hoverEnabled: true
         }
     }
     Button {
@@ -59,9 +66,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "8"
-            background.color="#F67F79"
+        Rectangle {
+            anchors.fill: button_8
+            color: mouseArea_8.pressedButtons ? "#F67F79" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_8
+            onClicked: calculator_text.text += "8"
+            anchors.fill: button_8; hoverEnabled: true
         }
     }
     Button {
@@ -78,9 +90,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "9"
-            background.color="#FFCCD0"
+        Rectangle {
+            anchors.fill: button_9
+            color: mouseArea_9.pressedButtons ? "#FFCCD0" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_9
+            onClicked: calculator_text.text += "9"
+            anchors.fill: button_9; hoverEnabled: true
         }
     }
     Button {
@@ -96,9 +113,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "+"
-            background.color="#FCECED"
+        Rectangle {
+            anchors.fill: button_add
+            color: mouseArea_add.pressedButtons ? "#FCECED" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_add
+            onClicked: calculator_text.text += "+"
+            anchors.fill: button_add; hoverEnabled: true
         }
     }
 
@@ -117,9 +139,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "4"
-            background.color="#FA8F01"
+        Rectangle {
+            anchors.fill: button_4
+            color: mouseArea_4.pressedButtons ? "#FA8F01" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_4
+            onClicked: calculator_text.text += "4"
+            anchors.fill: button_4; hoverEnabled: true
         }
     }
     Button {
@@ -137,9 +164,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "5"
-            background.color="#FFCB71"
+        Rectangle {
+            anchors.fill: button_5
+            color: mouseArea_5.pressedButtons ? "#FFCB71" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_5
+            onClicked: calculator_text.text += "5"
+            anchors.fill: button_5; hoverEnabled: true
         }
     }
     Button {
@@ -157,9 +189,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "6"
-            background.color="#FFE1AE"
+        Rectangle {
+            anchors.fill: button_6
+            color: mouseArea_6.pressedButtons ? "#FFE1AE" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_6
+            onClicked: calculator_text.text += "5"
+            anchors.fill: button_6; hoverEnabled: true
         }
     }
     Button {
@@ -176,9 +213,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "-"
-            background.color="#FFF3DC"
+        Rectangle {
+            anchors.fill: button_subtract
+            color: mouseArea_subtract.pressedButtons ? "#FFF3DC" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_subtract
+            onClicked: calculator_text.text += "-"
+            anchors.fill: button_subtract; hoverEnabled: true
         }
     }
 
@@ -197,9 +239,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "1"
-            background.color="#FDEC00"
+        Rectangle {
+            anchors.fill: button_1
+            color: mouseArea_1.pressedButtons ? "#FDEC00" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_1
+            onClicked: calculator_text.text += "1"
+            anchors.fill: button_1; hoverEnabled: true
         }
     }
     Button {
@@ -217,9 +264,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "2"
-            background.color="#FEFF03"
+        Rectangle {
+            anchors.fill: button_2
+            color: mouseArea_2.pressedButtons ? "#FEFF03" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_2
+            onClicked: calculator_text.text += "2"
+            anchors.fill: button_2; hoverEnabled: true
         }
     }
     Button {
@@ -237,9 +289,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "3"
-            background.color="#FCFF86"
+        Rectangle {
+            anchors.fill: button_3
+            color: mouseArea_3.pressedButtons ? "#FCFF86" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_3
+            onClicked: calculator_text.text += "3"
+            anchors.fill: button_3; hoverEnabled: true
         }
     }
     Button {
@@ -256,9 +313,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "X"
-            background.color="#FFFEE9"
+        Rectangle {
+            anchors.fill: button_multiply
+            color: mouseArea_multiply.pressedButtons ? "#FFFEE9" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_multiply
+            onClicked: calculator_text.text += "X"
+            anchors.fill: button_multiply; hoverEnabled: true
         }
     }
 
@@ -277,9 +339,20 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text = ""
-            background.color="#3FB24D"
+        Rectangle {
+            anchors.fill: button_clear
+            color: mouseArea_clear.pressedButtons ? "#3FB24D" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_clear
+            onClicked: {
+                calculator_text.text = ""
+
+                // "=" 버튼 비활성화
+                button_equal.enabled = false
+            }
+
+            anchors.fill: button_clear; hoverEnabled: true
         }
     }
     Button {
@@ -297,9 +370,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "0"
-            background.color="#7ED180"
+        Rectangle {
+            anchors.fill: button_0
+            color: mouseArea_0.pressedButtons ? "#7ED180" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_0
+            onClicked: calculator_text.text += "0"
+            anchors.fill: button_0; hoverEnabled: true
         }
     }
     Button {
@@ -317,12 +395,20 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            Calculator.input_string = calculator_text.text
-            Calculator.result = Calculator.calculate()
-            calculator_text.text = Calculator.result
-            background.color="#C8E6C8"
+        Rectangle {
+            anchors.fill: button_equal
+            color: mouseArea_equal.pressedButtons ? "#C8E6C8" : "#E1E1E2"
         }
+        MouseArea {
+            id: mouseArea_equal
+            onClicked: {
+                Calculator.input_string = calculator_text.text
+                Calculator.result = Calculator.calculate()
+                calculator_text.text = Calculator.result
+            }
+            anchors.fill: button_equal; hoverEnabled: true
+        }
+
     }
     Button {
         id: button_divide
@@ -338,9 +424,14 @@ Window {
         }
         Layout.fillHeight: true
         Layout.fillWidth: true
-        onClicked: {
-            calculator_text.text += "/"
-            background.color="#E7F5E8"
+        Rectangle {
+            anchors.fill: button_divide
+            color: mouseArea_divide.pressedButtons ? "#E7F5E8" : "#E1E1E2"
+        }
+        MouseArea {
+            id: mouseArea_divide
+            onClicked: calculator_text.text += "/"
+            anchors.fill: button_divide; hoverEnabled: true
         }
     }
 }
