@@ -10,8 +10,6 @@ Window {
     height: 480
     title: qsTr("Calculator")
 
-    property bool mbuttonClicked: true
-
     Text {
         id: calculator_text
         height: 120
