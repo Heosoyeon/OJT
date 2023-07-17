@@ -159,10 +159,13 @@
 
 ![image](https://github.com/Heosoyeon/OJT/assets/99372040/7a54cf36-b285-445e-8433-10df21737ce0)
 
-#### - 6-3 버튼 클릭 시, 버튼 색상 변경 
-
-![](https://velog.velcdn.com/images/thdusdl4767/post/a9f7ddab-0566-41fe-9ed4-8e357dedba6f/image.png)
-
-#### - 6-4 Layout없이 버튼 정렬
+#### - 6-3 Layout없이 버튼 정렬
 
 ![](https://velog.velcdn.com/images/thdusdl4767/post/09fdd155-4508-4be7-a499-ccff196f1dd7/image.png)
+
+#### - 6-4 버튼 압력 시에만 색상 변경. 버튼을 때면, 원래 색상으로 돌아오게 하기
+#### - 6-5 "clear" 버튼 클릭 시, "clear"와 "=" 버튼 비활성화
+
+[결과 동영상]
+
+[Screencast from 2023년 07월 17일 16시 00분 39초.webm](https://github.com/Heosoyeon/OJT/assets/99372040/e69baae2-d9ad-4677-85fe-9a96e668a904)
